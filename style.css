@@ -138,3 +138,25 @@
   background-image: url('pin_shadow.png');
   background-repeat: no-repeat;
 }
+
+.sticky.tape:before{
+  position: absolute;
+  content: "";
+  width: 30%;
+  height: 30px;
+  top: -15px;
+  left: 35%;
+  border: solid 1px rgba(137,130,48,.2);
+  background: -moz-linear-gradient(top, rgba(254,243,127,.3) 0%, rgba(240,224,54,.3) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,243,127,.3)), color-stop(100%,rgba(240,224,54,.3)));
+  background: linear-gradient(top, rgba(254,243,127,.3) 0%,rgba(240,224,54,.3) 100%);
+
+  -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 0 rgba(0,0,0,.2);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 0 rgba(0,0,0,.2);
+
+  transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -mod-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+
+}
