@@ -6,6 +6,7 @@
   <style>
     div.demo {
       margin: 50px;
+      float: left;
     }
     div.demo1 {
       width: 200px;
@@ -18,6 +19,15 @@
       -webkit-animation-delay: 0.2s;
       -moz-animation-delay: 0.2s;
       -ms-animation-delay: 0.2s;
+    }
+    div.demo3 {
+      width: 200px;
+    }
+    div.demo3 .sticky{
+      animation-delay: 0.1s;
+      -webkit-animation-delay: 0.1s;
+      -moz-animation-delay: 0.1s;
+      -ms-animation-delay: 0.1s;
     }
   </style>
 </head>
@@ -35,6 +45,12 @@
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5),
       3px 6px 3px rgba(0, 0, 0, 0.5);
     </div>
+  </div>
+  <div class='sticky tape demo demo3'>
+  transform: skew(-4deg, 0deg);
+  border-radius: 0 1px 5px 50% / 0 30% 70% 4px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5),
+    3px 6px 3px rgba(0, 0, 0, 0.5);
   </div>
 </body>
 </html>
