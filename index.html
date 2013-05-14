@@ -1,0 +1,40 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>css3 flyaway sticky</title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+  <style>
+    div.demo {
+      margin: 50px;
+    }
+    div.demo1 {
+      width: 200px;
+    }
+    div.demo2 {
+      width: 240px;
+    }
+    div.demo2 .sticky{
+      animation-delay: 0.2s;
+      -webkit-animation-delay: 0.2s;
+      -moz-animation-delay: 0.2s;
+      -ms-animation-delay: 0.2s;
+    }
+  </style>
+</head>
+<body>
+  <div class='sticky demo demo1'>
+    transform: skew(-1deg, 0deg);
+    border-radius: 0 0 0px 0 / 0 0 0px 0;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5),
+      1px 1px 3px rgba(0, 0, 0, 0.5);
+  </div>
+  <div class='sticky-outer demo demo2'>
+    <div class='sticky'>
+    transform: skew(-4deg, 0deg);
+    border-radius: 0 1px 5px 50% / 0 30% 70% 4px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5),
+      3px 6px 3px rgba(0, 0, 0, 0.5);
+    </div>
+  </div>
+</body>
+</html>
